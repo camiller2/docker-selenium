@@ -1,5 +1,5 @@
-NAME := fl-selenium
-MAINTAINER := "Selenium <selenium-developers@googlegroups.com>"
+NAME := frontlineeducation/fl-selenium
+MAINTAINER := "fl-Selenium <null@frontlineed.com>"
 VERSION := $(or $(VERSION),$(VERSION),3.1.0-astatine)
 PLATFORM := $(shell uname -s)
 BUILD_ARGS := $(BUILD_ARGS)

@@ -1,5 +1,5 @@
 FROM ubuntu:16.04
-MAINTAINER Selenium <selenium-developers@googlegroups.com>
+MAINTAINER fl-Selenium <null@frontlineed.com>
 
 #================================================
 # Customize sources for apt-get
