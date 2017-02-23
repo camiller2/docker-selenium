@@ -1,4 +1,4 @@
-NAME := selenium
+NAME := fl-selenium
 VERSION := $(or $(VERSION),$(VERSION),3.1.0-astatine)
 PLATFORM := $(shell uname -s)
 BUILD_ARGS := $(BUILD_ARGS)
