@@ -1,5 +1,5 @@
 FROM ubuntu:16.04
-MAINTAINER Selenium <selenium-developers@googlegroups.com>
+MAINTAINER fl-Selenium <null@frontlineed.com>
 
 #================================================
 # Customize sources for apt-get
@@ -34,8 +34,11 @@ RUN apt-get update -qqy \
 #==========
 # Selenium
 #==========
+ARG SELENIUM_MAJOR_VERSION=2
+ARG SELENIUM_MINOR_VERSION=53
+ARG SELENIUM_PATCH_VERSION=1
 RUN  mkdir -p /opt/selenium \
-  && wget --no-verbose https://selenium-release.storage.googleapis.com/3.0/selenium-server-standalone-3.0.1.jar -O /opt/selenium/selenium-server-standalone.jar
+  && wget --no-verbose https://selenium-release.storage.googleapis.com/$SELENIUM_MAJOR_VERSION.$SELENIUM_MINOR_VERSION/selenium-server-standalone-$SELENIUM_MAJOR_VERSION.$SELENIUM_MINOR_VERSION.$SELENIUM_PATCH_VERSION.jar -O /opt/selenium/selenium-server-standalone.jar
 
 #========================================
 # Add normal user with passwordless sudo
