@@ -20,6 +20,15 @@ Images included:
 - __selenium/node-chrome-debug__: Selenium node with Chrome installed and runs a VNC server, needs to be connected to a Selenium Grid Hub
 - __selenium/node-firefox-debug__: Selenium node with Firefox installed and runs a VNC server, needs to be connected to a Selenium Grid Hub
 
+### Adjusting Browser / Selenium Versions
+Versions of the browsers, webdrivers, and selenium can be easily adjusted.  Open the following files, and update the appropriate version ARGS:
+
+- Base/Dockerfile
+- NodeChrome/Dockerfile.txt
+- NodeFirefox/Dockerfile.txt
+
+After updating these files, follow the [Building the images](#building-the-images) and [Running the images](#running-the-images) sections.
+
 ## Running the images
 
 When executing docker run for an image with chrome browser please add volume mount `-v /dev/shm:/dev/shm` to use the host's shared memory.
