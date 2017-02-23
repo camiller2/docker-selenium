@@ -2,8 +2,8 @@
 # NOTE: DO *NOT* EDIT THIS FILE.  IT IS GENERATED.
 # PLEASE UPDATE Dockerfile.txt INSTEAD OF THIS FILE
 # !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-FROM selenium/base:3.1.0-astatine
-MAINTAINER Selenium <selenium-developers@googlegroups.com>
+FROM frontlineeducation/fl-selenium/base:2.53.1-f46.0.1-cgoogle-chrome-stable
+MAINTAINER fl-Selenium <null@frontlineed.com>
 
 #========================
 # Selenium Configuration
@@ -12,13 +12,19 @@ MAINTAINER Selenium <selenium-developers@googlegroups.com>
 EXPOSE 4444
 
 ENV GRID_THROW_ON_CAPABILITY_NOT_PRESENT true
+# In milliseconds
 ENV GRID_NEW_SESSION_WAIT_TIMEOUT -1
 ENV GRID_JETTY_MAX_THREADS -1
+# In milliseconds
 ENV GRID_NODE_POLLING  5000
+# In milliseconds
 ENV GRID_CLEAN_UP_CYCLE 5000
+# In seconds
 ENV GRID_TIMEOUT 30
+# In seconds
 ENV GRID_BROWSER_TIMEOUT 0
 ENV GRID_MAX_SESSION 5
+# In milliseconds
 ENV GRID_UNREGISTER_IF_STILL_DOWN_AFTER 30000
 
 COPY generate_config /opt/selenium/generate_config

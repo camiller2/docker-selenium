@@ -2,8 +2,9 @@
 # NOTE: DO *NOT* EDIT THIS FILE.  IT IS GENERATED.
 # PLEASE UPDATE Dockerfile.txt INSTEAD OF THIS FILE
 # !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-FROM selenium/base:3.1.0-astatine
-MAINTAINER Selenium <selenium-developers@googlegroups.com>
+FROM frontlineeducation/fl-selenium/base:2.53.1-f46.0.1-cgoogle-chrome-stable
+MAINTAINER fl-Selenium <null@frontlineed.com>
+
 ENV DEBIAN_FRONTEND noninteractive
 ENV DEBCONF_NONINTERACTIVE_SEEN true
 

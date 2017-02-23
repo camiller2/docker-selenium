@@ -2,8 +2,8 @@
 # NOTE: DO *NOT* EDIT THIS FILE.  IT IS GENERATED.
 # PLEASE UPDATE Dockerfile.txt INSTEAD OF THIS FILE
 # !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-FROM selenium/node-firefox:3.1.0-astatine
-MAINTAINER Selenium <selenium-developers@googlegroups.com>
+FROM frontlineeducation/fl-selenium/node-firefox:2.53.1-f46.0.1-cgoogle-chrome-stable
+MAINTAINER fl-Selenium <null@frontlineed.com>
 
 USER root
 

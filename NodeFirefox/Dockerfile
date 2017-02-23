@@ -2,15 +2,15 @@
 # NOTE: DO *NOT* EDIT THIS FILE.  IT IS GENERATED.
 # PLEASE UPDATE Dockerfile.txt INSTEAD OF THIS FILE
 # !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-FROM selenium/node-base:3.1.0-astatine
-MAINTAINER Selenium <selenium-developers@googlegroups.com>
+FROM frontlineeducation/fl-selenium/node-base:2.53.1-f46.0.1-cgoogle-chrome-stable
+MAINTAINER fl-Selenium <null@frontlineed.com>
 
 USER root
 
 #=========
 # Firefox
 #=========
-ARG FIREFOX_VERSION=51.0.1
+ARG FIREFOX_VERSION=46.0.1
 RUN apt-get update -qqy \
   && apt-get -qqy --no-install-recommends install firefox \
   && rm -rf /var/lib/apt/lists/* /var/cache/apt/* \
