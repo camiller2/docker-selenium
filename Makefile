@@ -1,4 +1,4 @@
-NAME := frontlineeducation/fl-selenium
+NAME := frontlineeducation
 MAINTAINER := "fl-Selenium <null@frontlineed.com>"
 VERSION := $(or $(VERSION),$(VERSION),3.1.0-astatine)
 PLATFORM := $(shell uname -s)
